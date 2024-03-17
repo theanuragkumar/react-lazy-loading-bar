@@ -10,46 +10,45 @@ You can install React Top Loading Bar via npm:
 npm install react-lazy-loading-bar
 ```
 
-
 ## Usage
+
 Import the TopLoadingBar component and use it in your React application:
 
 ```jsx
-import React, { useState, useEffect } from 'react';
-import TopLoadingBar from 'react-lazy-loading-bar';
+import React, { useState, useEffect } from "react";
+import TopLoadingBar from "react-lazy-loading-bar";
 
 const App = () => {
-    const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState(0);
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (progress < 100) {
-                setProgress(prevProgress => prevProgress + 10);
-            } else {
-                clearInterval(interval);
-            }
-        }, 1000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (progress < 100) {
+        setProgress((prevProgress) => prevProgress + 10);
+      } else {
+        clearInterval(interval);
+      }
+    }, 1000);
 
-        return () => clearInterval(interval);
-    }, [progress]);
+    return () => clearInterval(interval);
+  }, [progress]);
 
-    return (
-        <div>
-            <h1>Your App</h1>
-            <TopLoadingBar
-                progress={progress}
-                color="#007bff"
-                height="2px"
-                transitionDuration="0.3s"
-                transitionTimingFunction="ease"
-            />
-        </div>
-    );
+  return (
+    <div>
+      <h1>Your App</h1>
+      <TopLoadingBar
+        progress={progress}
+        color="#007bff"
+        height="2px"
+        transitionDuration="0.3s"
+        transitionTimingFunction="ease"
+      />
+    </div>
+  );
 };
 
 export default App;
 ```
-
 
 ### Props
 
@@ -58,5 +57,3 @@ export default App;
 - `height`: The height of the loading bar (default: 2px).
 - `transitionDuration`: The duration of the width transition (default: 0.3s).
 - `transitionTimingFunction`: The timing function for the width transition (default: ease).
-
-

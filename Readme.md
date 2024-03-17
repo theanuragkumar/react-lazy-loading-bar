@@ -8,13 +8,13 @@ You can install React Top Loading Bar via npm:
 
 ```bash
 npm install react-top-loading-bar
+```
 
 
-Usage
+## Usage
 Import the TopLoadingBar component and use it in your React application:
 
-jsx
-Copy code
+```react
 import React, { useState, useEffect } from 'react';
 import TopLoadingBar from 'react-top-loading-bar';
 
@@ -48,14 +48,14 @@ const App = () => {
 };
 
 export default App;
-Props
+
+```
+
+
+### Props
 progress: The progress of the loading bar (0-100).
 color: The color of the loading bar (default: #007bff).
 height: The height of the loading bar (default: 2px).
 transitionDuration: The duration of the width transition (default: 0.3s).
 transitionTimingFunction: The timing function for the width transition (default: ease).
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-
-This `README.md` file provides users with installation instructions, usage examples, information about props, and licensing details. You can include this file in the root directory of your project and it will be displayed automatically on your GitHub repository page or npm package page.

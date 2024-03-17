@@ -48,14 +48,15 @@ const App = () => {
 };
 
 export default App;
-
 ```
 
 
 ### Props
-    - `progress`: The progress of the loading bar (0-100).
-    - `color`: The color of the loading bar (default: #007bff).
-    - `height`: The height of the loading bar (default: 2px).
-    - `transitionDuration`: The duration of the width transition (default: 0.3s).
-    - `transitionTimingFunction`: The timing function for the width transition (default: ease).
+
+- `progress`: The progress of the loading bar (0-100).
+- `color`: The color of the loading bar (default: #007bff).
+- `height`: The height of the loading bar (default: 2px).
+- `transitionDuration`: The duration of the width transition (default: 0.3s).
+- `transitionTimingFunction`: The timing function for the width transition (default: ease).
+
 

@@ -7,7 +7,7 @@ React Top Loading Bar is a customizable React component that provides a top-load
 You can install React Top Loading Bar via npm:
 
 ```bash
-npm install react-top-loading-bar
+npm install react-lazy-loading-bar
 ```
 
 
@@ -16,7 +16,7 @@ Import the TopLoadingBar component and use it in your React application:
 
 ```jsx
 import React, { useState, useEffect } from 'react';
-import TopLoadingBar from 'react-top-loading-bar';
+import TopLoadingBar from 'react-lazy-loading-bar';
 
 const App = () => {
     const [progress, setProgress] = useState(0);

@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     height: 2px;
-    background-color: #007bff; /* You can customize the color */
+    background-color: #007bff; 
     z-index: 9999;
     transition: width 0.3s ease;
 }

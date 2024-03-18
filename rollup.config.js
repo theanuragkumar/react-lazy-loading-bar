@@ -1,8 +1,8 @@
-import babel from "rollup-plugin-babel";
-import resolve from "@rollup/plugin-node-resolve";
-import external from "rollup-plugin-peer-deps-external";
-import { terser } from "rollup-plugin-terser";
-import postcss from "rollup-plugin-postcss";
+import babel from "rollup-plugin-babel"; // To transpile
+import resolve from "@rollup/plugin-node-resolve";  // To resolve dependencies
+import external from "rollup-plugin-peer-deps-external"; // To resolve peer dependencies
+import { terser } from "rollup-plugin-terser"; // To minify JS
+import postcss from "rollup-plugin-postcss"; // To minimize CSS
 
 export default [
   {
